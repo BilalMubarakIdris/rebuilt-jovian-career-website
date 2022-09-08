@@ -16,7 +16,7 @@
   </head>
   <body>
     {% include 'nav.html' %}
-    <img class="img-fluid" id="banner" src="https://jovian-careers-website.aakashns.repl.co/static/banner.jpeg" >
+    <img class="img-fluid" id="banner" src="static/banner.jpg" >
     <div class="container">
       <h1 class="text-center mt-2 mb-4">
         {{company_name}} Careers
@@ -28,13 +28,13 @@
       </p>
         </div>
         <div class="d-none d-md-block col-md-6">
-        <img src="/static/people.jpeg" style="height:320px;border-radius:4px;">
+        <img src="/static/people_at_work.jpg" style="height:320px;border-radius:4px;">
         </div>
       </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       <div>
         {% for job in jobs %}
-          {% include 'jobitem.html' %}
+          {% include 'jobitems.html' %}
         {% endfor %}
       </div>
       <div class="text-center">
