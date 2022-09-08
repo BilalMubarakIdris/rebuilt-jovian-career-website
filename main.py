@@ -49,6 +49,11 @@ def backend_engineer():
     return render_template("backend_engineer.html")
 
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
 @app.route('/api/jobs')
 def jobs_api():
     return jsonify(JOBS)
