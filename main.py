@@ -34,6 +34,21 @@ def data_analyst():
     return render_template("data_analyst.html")
 
 
+@app.route('/jobs/data_scientist')
+def data_scientist():
+    return render_template("data_scientist.html")
+
+
+@app.route('/jobs/frontend_engineer')
+def frontend_engineer():
+    return render_template("frontend_engineer.html")
+
+
+@app.route('/jobs/backend_engineer')
+def backend_engineer():
+    return render_template("backend_engineer.html")
+
+
 @app.route('/api/jobs')
 def jobs_api():
     return jsonify(JOBS)
